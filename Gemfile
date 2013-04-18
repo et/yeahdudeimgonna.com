@@ -7,6 +7,7 @@ gem 'high_voltage'
 gem 'rails', '3.2.13'
 gem 'pg'
 gem 'plan_b'
+gem 'unicorn'
 
 group :development, :test do
   gem 'capybara'
