@@ -15,5 +15,6 @@ end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'uglifier'
   gem 'zurb-foundation', '~> 4.0.0'
 end
