@@ -4,7 +4,7 @@ gem 'bcrypt-ruby'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'rails', '3.2.13'
-gem 'sqlite3'
+gem 'pg'
 gem 'plan_b'
 
 group :development, :test do
