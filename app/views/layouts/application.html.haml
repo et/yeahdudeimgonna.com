@@ -1,0 +1,30 @@
+!!! 5
+%html
+  %head
+    %meta{content: "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %meta{content: "NONE,NOARCHIVE", name: "robots"}
+    %title Yeah dude, I'm gonna...
+    = csrf_meta_tag
+    = stylesheet_link_tag 'application', :media => :all
+    = javascript_include_tag 'vendor/custom.modernizr'
+
+  %body.yeahdude
+    %nav.top-bar
+      %ul.title-area
+        %li.name
+          %h1
+            = link_to "Yeah dude, I'm gonna...", root_path
+        %li.toggle-topbar.menu-icon
+          %a{:href => "#"}
+            %span menu
+      %section.top-bar-section
+        %ul.right
+          %li.divider
+          %li
+            = link_to 'Statistics', page_path('statistics')
+          %li
+            = link_to 'About', page_path('about')
+    = yield
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    = javascript_include_tag 'application'
