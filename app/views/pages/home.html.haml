@@ -2,48 +2,14 @@
   .large-7.columns.lead
     .row.panel
       .twelve.columns
-        = link_to published_itinerary_path(PlanB::Itinerary.last.slug) do
-          = image_tag 'home/grand_canyon.jpg'
-        %h5
-          = link_to PlanB::Itinerary.last.title, published_itinerary_path(PlanB::Itinerary.last.slug)
-        %p
-          = PlanB::Itinerary.last.summary
-          = link_to '→ Read More', published_itinerary_path(PlanB::Itinerary.last.slug)
+        Hey man, if I was doing something rad. I'd put it here.
 
   .large-4.large-offset-1.columns.past-trips
     .row.title
       %h2
         Past trips
-    = link_to published_itinerary_path(PlanB::Itinerary.last.slug) do
-      .row.panel
-        .large-3.columns
-          = image_tag 'home/grand_canyon.jpg'
-        .large-9.columns
-          %h6
-            = PlanB::Itinerary.last.title
-    = link_to published_itinerary_path(PlanB::Itinerary.last.slug) do
-      .row.panel
-        .large-3.columns
-          = image_tag 'home/grand_canyon.jpg'
-        .large-9.columns
-          %h6
-            = PlanB::Itinerary.last.title
-    = link_to published_itinerary_path(PlanB::Itinerary.last.slug) do
-      .row.panel
-        .large-3.columns
-          = image_tag 'home/grand_canyon.jpg'
-        .large-9.columns
-          %h6
-            = PlanB::Itinerary.last.title
-    = link_to published_itinerary_path(PlanB::Itinerary.last.slug) do
-      .row.panel
-        .large-3.columns
-          = image_tag 'home/grand_canyon.jpg'
-        .large-9.columns
-          %h6
-            = PlanB::Itinerary.last.title
-    = link_to published_itinerary_path(PlanB::Itinerary.last.slug) do
-      .row.panel.right → See More
+      %p
+        If I did anything cool yet, it might show up here.
 
 
 .row
@@ -51,14 +17,61 @@
     .row.title
       %h2
         Upcoming trips
-.row
+.row.upcoming
   .large-4.columns
     .row.panel
       .large-3.columns
-        = image_tag 'home/grand_canyon.jpg'
+        = image_tag 'home/monterey_bay_aquarium.jpg'
       .large-9.columns
         %h6
-          = PlanB::Itinerary.last.title
+          See the seahorses at the Monterey Bay Aquarium
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/sykes_hot_springs.jpg'
+      .large-9.columns
+        %h6
+          Backpack to the Big Sur hot springs
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/santa_monica.jpg'
+      .large-9.columns
+        %h6
+          Bathe in the beaches of Santa Monica
+.row.upcoming
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/disneyland.jpg'
+      .large-9.columns
+        %h6
+          Get a photo with Mickey at Disneyland
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/joshua_tree.jpg'
+      .large-9.columns
+        %h6
+          Flash some 5-10bs at Joshua Tree
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/death_valley.jpg'
+      .large-9.columns
+        %h6
+          Bake in Death Valley
+.row.upcoming
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/red_rock_canyon.jpg'
+      .large-9.columns
+        %h6
+          Climb some red rocks
 
   .large-4.columns
     .row.panel
@@ -66,36 +79,87 @@
         = image_tag 'home/grand_canyon.jpg'
       .large-9.columns
         %h6
-          = PlanB::Itinerary.last.title
+          Hike the Grand Canyon rim to rim to rim
 
   .large-4.columns
     .row.panel
       .large-3.columns
-        = image_tag 'home/grand_canyon.jpg'
+        = image_tag 'home/zion.jpg'
       .large-9.columns
         %h6
-          = PlanB::Itinerary.last.title
-.row
+          Drink margaritas in a Zion slot canyon
+
+.row.upcoming
   .large-4.columns
     .row.panel
       .large-3.columns
-        = image_tag 'home/grand_canyon.jpg'
+        = image_tag 'home/arches.jpg'
       .large-9.columns
         %h6
-          = PlanB::Itinerary.last.title
+          Drop my jaw at the Delicate Arch
 
   .large-4.columns
     .row.panel
       .large-3.columns
-        = image_tag 'home/grand_canyon.jpg'
+        = image_tag 'home/longs_peak.jpg'
       .large-9.columns
         %h6
-          = PlanB::Itinerary.last.title
+          Ascend a 14er
 
   .large-4.columns
     .row.panel
       .large-3.columns
-        = image_tag 'home/grand_canyon.jpg'
+        = image_tag 'home/st_louis.jpg'
       .large-9.columns
         %h6
-          = PlanB::Itinerary.last.title
+          Engulf St. Louis style pizza
+
+.row.upcoming
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/mammoth_cave.jpg'
+      .large-9.columns
+        %h6
+          Spelunk a Mammoth cave
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/nashville.jpg'
+      .large-9.columns
+        %h6
+          Hoedown in Nashville
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/smokies.jpg'
+      .large-9.columns
+        %h6
+          Get lost in the Great Smoky mountains
+
+.row.upcoming
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/zorbing.jpg'
+      .large-9.columns
+        %h6
+          Zorb down a mountain
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/virginia.jpg'
+      .large-9.columns
+        %h6
+          Spend some time somewhere on the AT
+
+  .large-4.columns
+    .row.panel
+      .large-3.columns
+        = image_tag 'home/new_jersey.png'
+      .large-9.columns
+        %h6
+          Eat some scrapple in New Jersey
